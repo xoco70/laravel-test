@@ -1,0 +1,10 @@
+vendor
+nodes_modules
+# Laravel 5 & Lumen specific
+public/storage
+storage/*.key
+storage/framework/cache/**
+storage/framework/sessions/**
+storage/framework/views/**
+.idea
+app.dockerfile.local

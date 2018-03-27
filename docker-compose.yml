@@ -1,0 +1,19 @@
+version: '3'
+services:
+  app:
+    build:
+      context: .
+      args:
+        http_proxy: http://10.31.255.65:8080
+        https_proxy: http://10.31.255.65:8080
+        HTTP_PROXY: http://10.31.255.65:8080
+        HTTPS_PROXY: http://10.31.255.65:8080
+
+    # optional, map host port 8000 to container port 80
+    #   ports:
+    #       - 8000:80
+    #
+    #         environment:
+    #             # vars available to app
+    #                 VIRTUAL_HOST: laravelapp.com
+    
